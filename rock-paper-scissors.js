@@ -65,7 +65,7 @@ function playAgain(){
             alert("Thanks for playing!");
         }
         else {
-            alert("Invalid input. Please enter Rock, Paper, or Scissors.");
+            alert("Invalid input. Please enter Yes or No.");
         }
     } while (playAgain.toLowerCase() != "yes" && playAgain.toLowerCase() != "y" && playAgain.toLowerCase() != "no" && playAgain.toLowerCase() != "n");
 }
