@@ -6,10 +6,11 @@ playGame();
 
 
 function playGame() {
+    humanScore = 0;
+    computerScore = 0;
+    round = 1;
     let result = "";
     while (round <= 5) {
-        // const humanSelection = getHumanChoice();
-        // const computerSelection = getComputerChoice();
         result = playRound(getHumanChoice(), getComputerChoice());
         console.log(result + "\n\nCurrent Score\n\nYou: " + humanScore + "\nComputer: " + computerScore);
         alert(result + "\n\nCurrent Score\n\nYou: " + humanScore + "\nComputer: " + computerScore);
@@ -17,7 +18,7 @@ function playGame() {
     }
     console.log("Final Score\nYou: " + humanScore + "\nComputer: " + computerScore);
     alert("Final Score\nYou: " + humanScore + "\nComputer: " + computerScore);
-    // playAgain();
+    playAgain();
 }
 
 function playRound(humanChoice, computerChoice) {
@@ -52,24 +53,22 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-// function playAgain(){
-//     let playAgain = "";
-//     do {
-//         playAgain = prompt("Would you like to play again? (Yes/No)");
-//         if (humanChoice.toLowerCase() === "yes") {
-//             humanScore
-//         }
-//         else if (humanChoice.toLowerCase() === "paper") {
-//             return "Paper";
-//         }
-//         else if (humanChoice.toLowerCase() === "scissors") {
-//             return "Scissors";
-//         }
-//         else {
-//             alert("Invalid input. Please enter Rock, Paper, or Scissors.");
-//         }
-//     } while (humanChoice.toLowerCase() != "rock" && humanChoice.toLowerCase() != "paper" && humanChoice.toLowerCase() != "scissors");
-// }
+function playAgain(){
+    let playAgain = "";
+    do {
+        playAgain = prompt("Would you like to play again? (Yes/No)");
+        if (playAgain.toLowerCase() === "yes" || playAgain.toLowerCase() === "y") {
+            playGame();
+        }
+        else if (playAgain.toLowerCase() === "no" || playAgain.toLowerCase() === "n") {
+            console.log("Thanks for playing!");
+            alert("Thanks for playing!");
+        }
+        else {
+            alert("Invalid input. Please enter Rock, Paper, or Scissors.");
+        }
+    } while (playAgain.toLowerCase() != "yes" && playAgain.toLowerCase() != "y" && playAgain.toLowerCase() != "no" && playAgain.toLowerCase() != "n");
+}
 
 
 function getComputerChoice() {
@@ -85,7 +84,7 @@ function getComputerChoice() {
 function getHumanChoice (){
     let humanChoice = "";
     do {
-        humanChoice = prompt("Rock, Paper, or Scissors?");
+        humanChoice = prompt("Round " + round + "\nRock, Paper, or Scissors?");
         if (humanChoice.toLowerCase() === "rock") {
             return "Rock";
         }
