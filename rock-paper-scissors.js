@@ -189,8 +189,6 @@ playAgainButton.addEventListener("click", (e) => {
 
 function playRound(humanChoice, computerChoice) {
 
-    console.log("Round " + round + "\n\nYour Choice: " + humanChoice + "\nComputer Choice: " + computerChoice);
-
     if (humanChoice === computerChoice) {
         gameWindow.removeChild(options);
         gameText.textContent = "It's a tie!";
