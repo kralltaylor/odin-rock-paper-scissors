@@ -110,13 +110,13 @@ gameText.style.textAlign = "center";
 gameText.textContent = "Make a Choice";
 let nextRound = document.createElement("button");
 nextRound.textContent = "Next Round";
-nextRound.style.width = "50%";
+nextRound.style.width = "75%";
 nextRound.style.fontSize = "16pt";
 nextRound.style.height = "50px";
 
 let startGame = document.createElement("button");
 startGame.textContent = "Start Game";
-startGame.style.width = "50%";
+startGame.style.width = "75%";
 startGame.style.fontSize = "16pt";
 startGame.style.height = "50px";
 
@@ -125,7 +125,7 @@ gameWindow.appendChild(startGame);
 
 let playAgainButton = document.createElement("button");
 playAgainButton.textContent = "Play Again";
-playAgainButton.style.width = "50%";
+playAgainButton.style.width = "75%";
 playAgainButton.style.padding = "10px";
 playAgainButton.style.fontSize = "20pt";
 playAgainButton.style.height = "50pt";
