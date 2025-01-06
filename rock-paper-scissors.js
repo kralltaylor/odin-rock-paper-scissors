@@ -192,6 +192,8 @@ playAgainButton.addEventListener("click", (e) => {
     gameWindow.removeChild(playAgainButton);
     gameWindow.removeChild(gameText);
     gameWindow.removeChild(scoreboard);
+    gameText.textContent = "First to 5 Wins";
+    gameWindow.appendChild(gameText);
     gameWindow.appendChild(startGame);    
 });
 
