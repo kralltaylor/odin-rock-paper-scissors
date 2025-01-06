@@ -110,7 +110,7 @@ options.appendChild(scissorsButton);
 let gameText = document.createElement("p");
 gameText.style.fontSize = "18pt";
 gameText.style.textAlign = "center";
-gameText.textContent = "Make a Choice";
+gameText.textContent = "First to 5 Wins";
 let nextRound = document.createElement("button");
 nextRound.textContent = "Next Round";
 nextRound.style.color = "black";
@@ -126,6 +126,7 @@ startGame.style.fontSize = "16pt";
 startGame.style.height = "50px";
 
 gameWindow.appendChild(header);
+gameWindow.appendChild(gameText);
 gameWindow.appendChild(startGame);
 
 let playAgainButton = document.createElement("button");
@@ -146,6 +147,8 @@ startGame.addEventListener("click", (e) => {
     computerPoints.textContent = computerScore;
     scoreHeader.textContent = "Current Score";
     gameWindow.removeChild(startGame);
+    gameWindow.removeChild(gameText);
+    gameText.textContent = "Make a Choice";
     gameWindow.appendChild(scoreboard);
     gameWindow.appendChild(gameText);
     gameWindow.appendChild(options);
