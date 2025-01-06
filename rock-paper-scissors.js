@@ -74,30 +74,31 @@ let options = document.createElement("div");
 options.id = "options";
 options.style.display = "flex";
 options.style.justifyContent = "space-around";
-options.style.width = "90%";
+options.style.width = "100%";
+options.style.gap = "5px";
 options.style.flexShrink = "0";
 options.style.alignSelf = "center";
 
 let rockButton = document.createElement("button");
 rockButton.id = "rock";
 rockButton.textContent = "Rock";
-rockButton.style.width = "30%";
+rockButton.style.width = "33%";
 rockButton.style.height = "40px";
-rockButton.style.fontSize = "12pt";
+rockButton.style.fontSize = "11pt";
 
 let paperButton = document.createElement("button");
 paperButton.id = "paper";
 paperButton.textContent = "Paper";
-paperButton.style.width = "30%";
+paperButton.style.width = "33%";
 paperButton.style.height = "40px";
-paperButton.style.fontSize = "12pt";
+paperButton.style.fontSize = "11pt";
 
 let scissorsButton = document.createElement("button");
 scissorsButton.id = "scissors";
 scissorsButton.textContent = "Scissors";
-scissorsButton.style.width = "30%";
+scissorsButton.style.width = "33%";
 scissorsButton.style.height = "40px";
-scissorsButton.style.fontSize = "12pt";
+scissorsButton.style.fontSize = "11pt";
 
 options.appendChild(rockButton);
 options.appendChild(paperButton);
