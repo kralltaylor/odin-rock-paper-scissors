@@ -233,7 +233,7 @@ function playRound(humanChoice, computerChoice) {
             humanPoints.textContent = humanScore;
             computerPoints.textContent = computerScore;
             gameWindow.removeChild(options);
-            gameText.textContent = "You lose! Rock crushes Scisors.";
+            gameText.textContent = "You lose! Rock crushes Scissors.";
         }
     }
     if (checkForWinner()){
