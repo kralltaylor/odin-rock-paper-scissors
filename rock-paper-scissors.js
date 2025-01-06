@@ -9,7 +9,7 @@ gameWindow.style.padding = "20px";
 gameWindow.style.display = "flex";
 gameWindow.style.flexDirection = "column";
 gameWindow.style.maxWidth = "40%";
-gameWindow.style.minWidth = "375px";
+gameWindow.style.minWidth = "300px";
 gameWindow.style.flex = "1 1 auto";
 gameWindow.style.alignItems = "center";
 let body = document.querySelector("body");
@@ -82,22 +82,22 @@ let rockButton = document.createElement("button");
 rockButton.id = "rock";
 rockButton.textContent = "Rock";
 rockButton.style.width = "30%";
-rockButton.style.height = "50px";
-rockButton.style.fontSize = "16pt";
+rockButton.style.height = "40px";
+rockButton.style.fontSize = "12pt";
 
 let paperButton = document.createElement("button");
 paperButton.id = "paper";
 paperButton.textContent = "Paper";
 paperButton.style.width = "30%";
-paperButton.style.height = "50px";
-paperButton.style.fontSize = "16pt";
+paperButton.style.height = "40px";
+paperButton.style.fontSize = "12pt";
 
 let scissorsButton = document.createElement("button");
 scissorsButton.id = "scissors";
 scissorsButton.textContent = "Scissors";
 scissorsButton.style.width = "30%";
-scissorsButton.style.height = "50px";
-scissorsButton.style.fontSize = "16pt";
+scissorsButton.style.height = "40px";
+scissorsButton.style.fontSize = "12pt";
 
 options.appendChild(rockButton);
 options.appendChild(paperButton);
